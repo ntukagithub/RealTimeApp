@@ -31,6 +31,8 @@ class Submit extends Component
          ]);
 
          $this->reset(['name','email','password']);
+
+         //this is the flash message from the session 
          request()->session()->flash('success','The user is succcesfull inserted ');
     }
 
